@@ -84,8 +84,6 @@ demo = gr.ChatInterface(
 
 if __name__ == "__main__":
     # For Hugging Face Spaces, use default launch settings
-    # For local, you can customize server_name and server_port
-    demo.launch(
-        theme=gr.themes.Soft()
-    )
+    # Theme is set via the Space's README.md metadata or can be customized in ChatInterface
+    demo.launch()
 
